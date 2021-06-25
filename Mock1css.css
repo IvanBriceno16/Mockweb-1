@@ -1,0 +1,40 @@
+h1 {
+
+    text-align: center;
+    color: rgba(1, 71, 54, 0.712);
+    font-family: lucida 'Courier New', Courier, monospace;
+}
+.border {
+    position: relative;
+    left:5%;
+    border-width: 8px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    border-color:rgba(43, 143, 18, 0.781);
+    border-radius: 10%;
+    border-style: solid;
+}
+.smaller-picture {
+    width: 200px;
+}
+
+.border:hover {
+    animation-name: expand;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes expand {
+    0% {
+        bottom: 0px;
+        border-color:rgba(45, 136, 22, 0.781)
+        
+    }
+    100% {
+        bottom: 12px;
+        border-color:rgb(94, 255, 0)
+    }
+    
+}
